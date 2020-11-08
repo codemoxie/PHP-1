@@ -18,13 +18,12 @@ $number = 0;
 // в таком варианте зацикливается на нуле, не могу понять, что не так
 
 do {
-    print_r($number . '<br>');
     if ($number === 0) {
-        $number .= ' - ноль';
+        echo $number . ' - ноль<br>';
     } elseif ($number % 2 !== 0) {
-        $number .= ' - нечетное число';
+        echo $number . ' - нечетное число<br>';
     } else {
-        $number .= ' - четное число';
+        echo $number . ' - четное число<br>';
     }
     $number++;
 } while ($number <= 10);
